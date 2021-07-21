@@ -25,14 +25,16 @@ function Home(props) {
   }) ;
 }
   return (
+    <S.Banner>
     <S.HomeContainer>
     <S.Contente>  
-       <S.Input className ="usuarioInput" placeholder='Usuário' value ={usuario} onChange={e =>setUsuario(e.target.value)} />
+       <S.Input className ="usuarioInput" placeholder='Digite o GitHub' value ={usuario} onChange={e =>setUsuario(e.target.value)} />
        <S.Buttom type="button" onClick ={handlePesquisa}>Pesquisar</S.Buttom>
        
     </S.Contente>
    { erro  ?    <S.ErrorMsg>Usuário não encontrado.Tente Novamente</S.ErrorMsg>:'' }
     </S.HomeContainer>
+    </S.Banner>
   );
 }
 

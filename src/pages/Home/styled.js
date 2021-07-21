@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+import ImgBackground from '../../assets/back.jpg';
+
+export const Banner =styled.div `
+background-image: url(${ImgBackground});
+width: 100%;
+height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
+`
+
+
 export const HomeContainer =styled.div`
 display: flex;
 flex-direction: column;
@@ -32,11 +43,12 @@ height: 1.5rem;
 }
 `
 export const Buttom = styled.button `
-height: 1.5rem;
-border: 1px solid #000;
-background: #000;
+height: 2rem;
+border: 3px solid #06394f;
+background: #007eb1;
 color: white;
 border-radius: 0 .25rem .25rem 0 ;
+
 
 &:focus,
 &:active {
@@ -48,8 +60,8 @@ border-radius: 0 .25rem .25rem 0 ;
 export const ErrorMsg = styled.span`
 
 display: block;
-font-size:0.65rem;
-color:red;
+font-size:1rem;
+color:white;
 font-weight: 600;
 margin-top: 1rem;
 

@@ -20,19 +20,20 @@ function Repositories() {
         }
     }, []);
     return (
+        <S.Fundo>
         <S.Container>  
-                <S.Title>Repositorios</S.Title>
+                <S.Title>Os repositórios do nick digitado são </S.Title>
                 <S.List>
                  {repositories.map(repository =>{
                      return (
-                         <S.ListItem> Repositorio :{repository} </S.ListItem>
+                         <S.ListItem> Repositorio : {repository} </S.ListItem>
                      )
                  })}   
 
                 </S.List>
             <S.LinkHome to='/'>Voltar</S.LinkHome>
         </S.Container>
-        
+        </S.Fundo>
     )
 }
 
